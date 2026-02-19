@@ -1,0 +1,29 @@
+{
+  "015ee9e0a5d64bf4": "The Translating Kitchen",
+  "0b0c35a036f6d43f": "Végétarien",
+  "246bd55f63fa9d0f": [
+    "Niveau de piquant : ",
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    "/5"
+  ],
+  "3ce4fa1a78d698c1": "Végétalien",
+  "6b69b37b03a99822": "Conçu avec gt-next pour illustrer les composants Currency, Num, Branche et T pour le contenu multilingue.",
+  "812a6e42e615759f": [
+    "Un menu de restaurant multilingue proposant ",
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " plats. Les prix, les étiquettes alimentaires et les descriptions sont tous traduits et formatés selon la locale à l'aide de gt-next."
+  ],
+  "933fa7740fe8c681": {
+    "i": 1,
+    "k": "_gt_value_1",
+    "v": "v"
+  }
+}
