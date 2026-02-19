@@ -1,40 +1,41 @@
-import { T, Currency, Num, Branch, Var } from "gt-next";
+import { T, Currency, Num, Branch, Var, msg } from "gt-next";
+import { getMessages } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 
 type MenuItem = {
-  name: string;
-  description: string;
+  name: ReturnType<typeof msg>;
+  description: ReturnType<typeof msg>;
   price: number;
   dietary: "vegetarian" | "vegan" | "none";
   spiceLevel: number;
 };
 
 type MenuSection = {
-  title: string;
+  title: ReturnType<typeof msg>;
   items: MenuItem[];
 };
 
 const menu: MenuSection[] = [
   {
-    title: "Starters",
+    title: msg("Starters"),
     items: [
       {
-        name: "French Onion Soup",
-        description: "Slow-cooked onion broth with melted Gruyere and toasted bread",
+        name: msg("French Onion Soup"),
+        description: msg("Slow-cooked onion broth with melted Gruyere and toasted bread"),
         price: 12,
         dietary: "vegetarian",
         spiceLevel: 0,
       },
       {
-        name: "Tuna Tartare",
-        description: "Fresh yellowfin tuna with avocado, sesame, and citrus ponzu",
+        name: msg("Tuna Tartare"),
+        description: msg("Fresh yellowfin tuna with avocado, sesame, and citrus ponzu"),
         price: 18,
         dietary: "none",
         spiceLevel: 1,
       },
       {
-        name: "Roasted Beet Salad",
-        description: "Heirloom beets with goat cheese, candied walnuts, and arugula",
+        name: msg("Roasted Beet Salad"),
+        description: msg("Heirloom beets with goat cheese, candied walnuts, and arugula"),
         price: 14,
         dietary: "vegetarian",
         spiceLevel: 0,
@@ -42,32 +43,32 @@ const menu: MenuSection[] = [
     ],
   },
   {
-    title: "Main Courses",
+    title: msg("Main Courses"),
     items: [
       {
-        name: "Pan-Seared Salmon",
-        description: "Atlantic salmon with lemon-dill sauce, asparagus, and fingerling potatoes",
+        name: msg("Pan-Seared Salmon"),
+        description: msg("Atlantic salmon with lemon-dill sauce, asparagus, and fingerling potatoes"),
         price: 32,
         dietary: "none",
         spiceLevel: 0,
       },
       {
-        name: "Grilled Ribeye",
-        description: "Dry-aged 14oz ribeye with truffle butter, roasted garlic, and seasonal vegetables",
+        name: msg("Grilled Ribeye"),
+        description: msg("Dry-aged 14oz ribeye with truffle butter, roasted garlic, and seasonal vegetables"),
         price: 48,
         dietary: "none",
         spiceLevel: 0,
       },
       {
-        name: "Wild Mushroom Risotto",
-        description: "Arborio rice with porcini, chanterelle, and shaved Parmigiano-Reggiano",
+        name: msg("Wild Mushroom Risotto"),
+        description: msg("Arborio rice with porcini, chanterelle, and shaved Parmigiano-Reggiano"),
         price: 26,
         dietary: "vegetarian",
         spiceLevel: 0,
       },
       {
-        name: "Thai Red Curry",
-        description: "Coconut milk curry with seasonal vegetables, jasmine rice, and Thai basil",
+        name: msg("Thai Red Curry"),
+        description: msg("Coconut milk curry with seasonal vegetables, jasmine rice, and Thai basil"),
         price: 24,
         dietary: "vegan",
         spiceLevel: 3,
@@ -75,25 +76,25 @@ const menu: MenuSection[] = [
     ],
   },
   {
-    title: "Desserts",
+    title: msg("Desserts"),
     items: [
       {
-        name: "Creme Brulee",
-        description: "Classic vanilla custard with caramelized sugar and fresh berries",
+        name: msg("Creme Brulee"),
+        description: msg("Classic vanilla custard with caramelized sugar and fresh berries"),
         price: 14,
         dietary: "vegetarian",
         spiceLevel: 0,
       },
       {
-        name: "Dark Chocolate Fondant",
-        description: "Warm chocolate cake with a molten center, served with vanilla ice cream",
+        name: msg("Dark Chocolate Fondant"),
+        description: msg("Warm chocolate cake with a molten center, served with vanilla ice cream"),
         price: 16,
         dietary: "vegetarian",
         spiceLevel: 0,
       },
       {
-        name: "Mango Sorbet",
-        description: "House-made tropical sorbet with lime zest and fresh mint",
+        name: msg("Mango Sorbet"),
+        description: msg("House-made tropical sorbet with lime zest and fresh mint"),
         price: 10,
         dietary: "vegan",
         spiceLevel: 0,
@@ -133,23 +134,19 @@ function SpiceIndicator({ level }: { level: number }) {
   );
 }
 
-function MenuItemCard({ item }: { item: MenuItem }) {
+function MenuItemCard({ item, m }: { item: MenuItem; m: Awaited<ReturnType<typeof getMessages>> }) {
   return (
     <div className="flex justify-between items-start gap-4 py-5 border-b border-neutral-800 last:border-b-0">
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
           <h3 className="text-base font-medium text-neutral-100">
-            <T>
-              <Var>{item.name}</Var>
-            </T>
+            {m(item.name)}
           </h3>
           <DietaryBadge dietary={item.dietary} />
           <SpiceIndicator level={item.spiceLevel} />
         </div>
         <p className="text-sm text-neutral-500 mt-1 leading-relaxed">
-          <T>
-            <Var>{item.description}</Var>
-          </T>
+          {m(item.description)}
         </p>
       </div>
       <div className="text-base font-medium text-neutral-200 shrink-0">
@@ -159,7 +156,8 @@ function MenuItemCard({ item }: { item: MenuItem }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const m = await getMessages();
   const totalItems = menu.reduce((sum, section) => sum + section.items.length, 0);
 
   return (
@@ -212,15 +210,13 @@ export default function Home() {
         </div>
 
         {menu.map((section) => (
-          <section key={section.title} className="mb-10">
+          <section key={m(section.title)} className="mb-10">
             <h3 className="text-lg font-semibold text-neutral-100 mb-1 pb-3 border-b border-neutral-700">
-              <T>
-                <Var>{section.title}</Var>
-              </T>
+              {m(section.title)}
             </h3>
             <div>
               {section.items.map((item) => (
-                <MenuItemCard key={item.name} item={item} />
+                <MenuItemCard key={m(item.name)} item={item} m={m} />
               ))}
             </div>
           </section>
