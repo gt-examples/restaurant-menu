@@ -1,6 +1,10 @@
 {
   "015ee9e0a5d64bf4": "The Translating Kitchen",
+  "09bfd2da273b7562": "Desserts",
   "0b0c35a036f6d43f": "Végétarien",
+  "1589a462df871b1a": "Bouillon d’oignons mijoté, gratiné au gruyère et servi avec du pain grillé",
+  "1fedcc0abc6d323f": "Saumon de l’Atlantique, sauce citron-aneth, asperges et pommes de terre grenailles",
+  "241fd54703d678cc": "Crème à la vanille classique avec sucre caramélisé et fruits rouges frais",
   "246bd55f63fa9d0f": [
     "Niveau de piquant : ",
     {
@@ -10,8 +14,16 @@
     },
     "/5"
   ],
+  "24a1e276741328e2": "Sorbet à la mangue",
+  "26d0c31e2edf9320": "Entrées",
+  "28b60acc07fc7411": "Thon albacore frais, avocat, sésame et sauce ponzu aux agrumes",
   "3ce4fa1a78d698c1": "Végétalien",
+  "5487b374382c4c80": "Curry rouge au lait de coco avec légumes de saison, riz jasmin et basilic thaï",
+  "615fcf7ed7226c3f": "Plats principaux",
+  "62d3fbda91378f58": "Betteraves anciennes rôties, fromage de chèvre, noix caramélisées et roquette",
   "6b69b37b03a99822": "Conçu avec gt-next pour illustrer les composants Currency, Num, Branche et T pour le contenu multilingue.",
+  "6c83b501e7be3acc": "Sorbet tropical maison au zeste de citron vert et à la menthe fraîche",
+  "77e6ab57b7b77df2": "Tartare de thon",
   "812a6e42e615759f": [
     "Un menu de restaurant multilingue proposant ",
     {
@@ -19,11 +31,17 @@
       "k": "_gt_n_1",
       "v": "n"
     },
-    " plats. Les prix, les étiquettes alimentaires et les descriptions sont tous traduits et formatés selon la locale à l'aide de gt-next."
+    " plats. Les prix, les mentions diététiques et les descriptions sont tous traduits et formatés selon la locale à l'aide de gt-next."
   ],
-  "933fa7740fe8c681": {
-    "i": 1,
-    "k": "_gt_value_1",
-    "v": "v"
-  }
+  "8163afc69fb530be": "Risotto aux champignons sauvages",
+  "84d82d0fab864ca8": "Riz Arborio aux cèpes, girolles et copeaux de Parmigiano Reggiano",
+  "85b7185287d80fc7": "Curry rouge thaïlandais",
+  "90d11ce355e8b11f": "Soupe à l’oignon gratinée",
+  "9a24d9b7e8277f39": "Crème brûlée",
+  "c175846da9bcd793": "Entrecôte de bœuf grillée",
+  "cdff8c57045725fb": "Salade de betteraves rôties",
+  "d4f4746395b7122b": "Gâteau fondant au chocolat chaud, servi avec une glace à la vanille",
+  "d787f470ed168352": "Entrecôte de bœuf maturée à sec, 14 oz, servie avec beurre à la truffe, ail rôti et légumes de saison",
+  "ef0cff4430cd3791": "Fondant au chocolat noir",
+  "f31a93fc92cf3af3": "Saumon poêlé"
 }

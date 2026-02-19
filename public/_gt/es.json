@@ -1,6 +1,10 @@
 {
   "015ee9e0a5d64bf4": "The Translating Kitchen",
+  "09bfd2da273b7562": "Postres",
   "0b0c35a036f6d43f": "Vegetariano",
+  "1589a462df871b1a": "Caldo de cebolla cocido a fuego lento con Gruyère fundido y pan tostado",
+  "1fedcc0abc6d323f": "Salmón del Atlántico con salsa de limón y eneldo, espárragos y patatas baby",
+  "241fd54703d678cc": "Clásica crema de vainilla con azúcar caramelizado y frutos rojos frescos",
   "246bd55f63fa9d0f": [
     "Nivel de picante: ",
     {
@@ -10,8 +14,16 @@
     },
     "/5"
   ],
+  "24a1e276741328e2": "Sorbete de mango",
+  "26d0c31e2edf9320": "Entrantes",
+  "28b60acc07fc7411": "Atún de aleta amarilla fresco con aguacate, sésamo y ponzu de cítricos",
   "3ce4fa1a78d698c1": "Vegano",
+  "5487b374382c4c80": "Curry tailandés de leche de coco con verduras de temporada, arroz jazmín y albahaca tailandesa",
+  "615fcf7ed7226c3f": "Platos principales",
+  "62d3fbda91378f58": "Remolachas de variedades tradicionales con queso de cabra, nueces caramelizadas y rúcula",
   "6b69b37b03a99822": "Desarrollado con gt-next para demostrar los componentes Currency, Num, Rama y T para contenido multilingüe.",
+  "6c83b501e7be3acc": "Sorbete tropical casero con ralladura de lima y menta fresca",
+  "77e6ab57b7b77df2": "Tartar de atún",
   "812a6e42e615759f": [
     "Un menú de restaurante multilingüe con ",
     {
@@ -21,9 +33,15 @@
     },
     " platos. Los precios, etiquetas dietéticas y descripciones están traducidos y formateados según la configuración regional usando gt-next."
   ],
-  "933fa7740fe8c681": {
-    "i": 1,
-    "k": "_gt_value_1",
-    "v": "v"
-  }
+  "8163afc69fb530be": "Risotto de setas silvestres",
+  "84d82d0fab864ca8": "Arroz arborio con porcini, rebozuelos y lascas de Parmigiano-Reggiano",
+  "85b7185287d80fc7": "Curry rojo tailandés",
+  "90d11ce355e8b11f": "Sopa de cebolla francesa",
+  "9a24d9b7e8277f39": "Crème brûlée",
+  "c175846da9bcd793": "Entrecot a la parrilla",
+  "cdff8c57045725fb": "Ensalada de remolacha asada",
+  "d4f4746395b7122b": "Pastel de chocolate caliente con interior fundido, servido con helado de vainilla",
+  "d787f470ed168352": "Entrecot madurado en seco de 14 oz con mantequilla de trufa, ajo asado y verduras de temporada",
+  "ef0cff4430cd3791": "Fondant de chocolate negro",
+  "f31a93fc92cf3af3": "Salmón a la plancha"
 }
