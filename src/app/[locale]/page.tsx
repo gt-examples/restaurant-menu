@@ -1,5 +1,6 @@
-import { T, Currency, Num, Branch, Var, msg } from "gt-next";
-import { getMessages } from "gt-next/server";
+"use client";
+
+import { T, Currency, Num, Branch, Var, msg, useMessages } from "gt-next";
 import { LocaleSelector } from "gt-next";
 
 type MenuItem = {
@@ -134,7 +135,8 @@ function SpiceIndicator({ level }: { level: number }) {
   );
 }
 
-function MenuItemCard({ item, m }: { item: MenuItem; m: Awaited<ReturnType<typeof getMessages>> }) {
+function MenuItemCard({ item }: { item: MenuItem }) {
+  const m = useMessages();
   return (
     <div className="flex justify-between items-start gap-4 py-5 border-b border-neutral-800 last:border-b-0">
       <div className="flex-1 min-w-0">
@@ -156,8 +158,8 @@ function MenuItemCard({ item, m }: { item: MenuItem; m: Awaited<ReturnType<typeo
   );
 }
 
-export default async function Home() {
-  const m = await getMessages();
+export default function Home() {
+  const m = useMessages();
   const totalItems = menu.reduce((sum, section) => sum + section.items.length, 0);
 
   return (
@@ -216,7 +218,7 @@ export default async function Home() {
             </h3>
             <div>
               {section.items.map((item) => (
-                <MenuItemCard key={m(item.name)} item={item} m={m} />
+                <MenuItemCard key={m(item.name)} item={item} />
               ))}
             </div>
           </section>
