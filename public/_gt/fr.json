@@ -1,10 +1,10 @@
 {
   "015ee9e0a5d64bf4": "The Translating Kitchen",
   "09bfd2da273b7562": "Desserts",
-  "0b0c35a036f6d43f": "Végétarien",
-  "1589a462df871b1a": "Bouillon d’oignons mijoté, gratiné au gruyère et servi avec du pain grillé",
-  "1fedcc0abc6d323f": "Saumon de l’Atlantique, sauce citron-aneth, asperges et pommes de terre grenailles",
-  "241fd54703d678cc": "Crème à la vanille classique avec sucre caramélisé et fruits rouges frais",
+  "0c730b7f189776b6": "Voir sur GitHub",
+  "1589a462df871b1a": "Bouillon d’oignons longuement mijoté, gruyère fondu et pain grillé",
+  "1fedcc0abc6d323f": "Saumon de l’Atlantique, sauce citron-aneth, asperges et pommes de terre grenaille",
+  "241fd54703d678cc": "Crème vanille classique, sucre caramélisé et fruits rouges frais",
   "246bd55f63fa9d0f": [
     "Niveau de piquant : ",
     {
@@ -17,12 +17,35 @@
   "24a1e276741328e2": "Sorbet à la mangue",
   "26d0c31e2edf9320": "Entrées",
   "28b60acc07fc7411": "Thon albacore frais, avocat, sésame et sauce ponzu aux agrumes",
-  "3ce4fa1a78d698c1": "Végétalien",
-  "5487b374382c4c80": "Curry rouge au lait de coco avec légumes de saison, riz jasmin et basilic thaï",
+  "30a778088db31940": "Menu du restaurant",
+  "4d94be753acd7d61": [
+    "Conçu avec ",
+    {
+      "c": "gt-next",
+      "i": 1,
+      "t": "a"
+    },
+    " pour démontrer les composants Currency, Num, Branche et T pour le contenu multilingue."
+  ],
+  "5487b374382c4c80": "Curry au lait de coco, légumes de saison, riz jasmin et basilic thaïlandais",
   "615fcf7ed7226c3f": "Plats principaux",
   "62d3fbda91378f58": "Betteraves anciennes rôties, fromage de chèvre, noix caramélisées et roquette",
-  "6b69b37b03a99822": "Conçu avec gt-next pour illustrer les composants Currency, Num, Branche et T pour le contenu multilingue.",
-  "6c83b501e7be3acc": "Sorbet tropical maison au zeste de citron vert et à la menthe fraîche",
+  "6c83b501e7be3acc": "Sorbet tropical maison, zeste de citron vert et menthe fraîche",
+  "72e71b467393410f": [
+    "Ceci est un exemple d'application créée avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    ". Voir le ",
+    {
+      "c": "code source",
+      "i": 2,
+      "t": "a"
+    },
+    "."
+  ],
   "77e6ab57b7b77df2": "Tartare de thon",
   "812a6e42e615759f": [
     "Un menu de restaurant multilingue proposant ",
@@ -38,10 +61,33 @@
   "85b7185287d80fc7": "Curry rouge thaïlandais",
   "90d11ce355e8b11f": "Soupe à l’oignon gratinée",
   "9a24d9b7e8277f39": "Crème brûlée",
-  "c175846da9bcd793": "Entrecôte de bœuf grillée",
+  "c175846da9bcd793": "Côte de bœuf grillée",
+  "caa90384256e7f7a": {
+    "c": {
+      "i": 2,
+      "t": "C2"
+    },
+    "d": {
+      "b": {
+        "vegan": {
+          "c": "Végétalien",
+          "i": 2,
+          "t": "span"
+        },
+        "vegetarian": {
+          "c": "Végétarien",
+          "i": 2,
+          "t": "span"
+        }
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
   "cdff8c57045725fb": "Salade de betteraves rôties",
-  "d4f4746395b7122b": "Gâteau fondant au chocolat chaud, servi avec une glace à la vanille",
-  "d787f470ed168352": "Entrecôte de bœuf maturée à sec, 14 oz, servie avec beurre à la truffe, ail rôti et légumes de saison",
+  "d4f4746395b7122b": "Gâteau moelleux au chocolat au cœur coulant, servi avec une glace à la vanille",
+  "d787f470ed168352": "Côte de bœuf de 14 oz maturée à sec, beurre truffé, ail rôti et légumes de saison",
   "ef0cff4430cd3791": "Fondant au chocolat noir",
   "f31a93fc92cf3af3": "Saumon poêlé"
 }
